@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
+    grid-template-rows: 0.6fr 1.8fr 1.2fr 0.4fr;
+    grid-template-areas: "navbar navbar navbar navbar"
+                         "sidebar main main main"
+                         "sidebar cont1 cont2 cont3"
+                         "footer footer footer footer";
+    grid-gap: 6px;
+    font-family: ubuntu, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: left;
+    
+}
+
+
+#navbar {
+    display: flex;
+    background-color: rgb(58, 58, 58);
+    border-radius: 2px;
+    grid-area: navbar;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#navbar img {
+    width: 300px;
+    padding-left: 30px;   
+}
+
+#navbar img:hover {
+    transition: 300ms;
+    width: 305px;
+    padding-left: 45px;   
+}
+
+#menu a{
+    color: #33CC99; /* cor texto menu */
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20x;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#menu a:hover {
+    color: #ffffff;
+    background-color: #0B2E2E;
+    padding-top: 20px;
+    border-radius: 5px;
+    text-decoration: overline #FFCC00;
+}
+
+#main {
+    background-color: #33cc99;
+    border-radius: 2px;
+    grid-area: main;
+    
+}
+
+#sidebar {
+    background-color: #999999;
+    border-radius: 2px;
+    grid-area: sidebar;
+}
+
+#cont1 {
+    background-color: #FFCC00;
+    border-radius: 2px;
+    grid-area: cont1;
+}
+
+#cont2 {
+    background-color: #FFCC00;
+    border-radius: 2px;
+    grid-area: cont2;
+}
+
+#cont3 {
+    background-color: #FFCC00;
+    border-radius: 2px;
+    grid-area: cont3;
+}
+
+#footer {
+    background-color: rgb(58, 58, 58);
+    border-radius: 2px;
+    grid-area: footer;
+    text-align: center;
+}
+
+#rodape {
+    font-size: 10pt;
+    color: #33CC99;
+    padding-top: 20px;
+    
+}
+
