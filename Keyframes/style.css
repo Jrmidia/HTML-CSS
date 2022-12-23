@@ -1,5 +1,28 @@
 .forma {
-    width: 50px;
+    position: absolute;
+    display: grid;
+    width: 150px;
     height: 50px;
-    color: blue;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: #348dc9;
+    font-family: montserrat;
+    text-align: center;
+    align-content: center;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.forma:hover {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    border-bottom-right-radius: 1.2em;
+    color: #ffe345;
+    background-color: #00ad4e;
+    font-family: montserrat;
+    text-align: center;
+    align-content: center;
+    transition: 0.5s;
 }
