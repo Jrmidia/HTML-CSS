@@ -48,7 +48,7 @@
         background-color: #5b0077;
         font-weight: bolder;
         transform: scale(1.9);
-        transform: rotate(0urn);
+        transform: rotate(turn);
     }
 
     50% {
