@@ -1,5 +1,14 @@
+*{
+    display: grid;
+    justify-content: center;
+    position: relative;
+    font-family: montserrat;
+    margin-top: 20px;
+}
+
 .forma {
-    position: absolute;
+    animation: aparece 1s;
+    animation-iteration-count: infinite;
     display: grid;
     width: 150px;
     height: 50px;
@@ -25,4 +34,18 @@
     text-align: center;
     align-content: center;
     transition: 0.5s;
+}
+
+@keyframes aparece {
+    0% {
+        opacity: 4;
+
+    }
+    100% {
+        opacity: 1;
+        border-radius: 10px;
+        transform: scale(1.1);
+        font-weight: 700;
+        color: aqua;
+    }
 }
