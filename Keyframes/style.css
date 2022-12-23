@@ -7,8 +7,9 @@
 }
 
 .forma {
-    animation: aparece 1s;
+    animation: aparece 2s ease-in;
     animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.17,.67,1,-0.48);
     display: grid;
     width: 150px;
     height: 50px;
@@ -38,9 +39,22 @@
 
 @keyframes aparece {
     0% {
-        opacity: 4;
-
+        opacity: 1;
     }
+
+    25% {
+        opacity: 1;
+        background-color: #e200d7;
+    }
+
+    50% {
+        background-color: #ffe345;
+    }
+
+    75% {
+        background-color: #8400a5;
+    }
+
     100% {
         opacity: 1;
         border-radius: 10px;
