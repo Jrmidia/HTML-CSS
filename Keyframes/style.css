@@ -23,7 +23,37 @@
     transition: 0.5s;
 }
 
+
+.forma2 {
+    animation: aparece2 4s ease-in infinite;
+    animation-timing-function: cubic-bezier(.1,.7,1,-0.48);
+    display: grid;
+    width: 150px;
+    height: 50px;
+    border-radius: 1px;
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: #34c954;
+    font-family: montserrat;
+    text-align: center;
+    align-content: center;
+    font-weight: 500;
+    transition: 0.5s;
+}
 .forma:hover {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    border-bottom-right-radius: 1.2em;
+    color: #ffe345;
+    background-color: #00ad4e;
+    font-family: montserrat;
+    text-align: center;
+    align-content: center;
+    transition: 0.5s;
+}
+
+.forma2:hover {
     width: 150px;
     height: 50px;
     border-radius: 8px;
@@ -71,5 +101,44 @@
         font-weight: 700;
         color: aqua;
         background-color: #000000;
+    }
+}
+
+@keyframes aparece2 {
+    0% {
+        opacity: 1;
+        border-radius: 2px;
+    }
+
+    25% {
+        opacity: 1;
+        border-radius: 20px;
+        background-color: #b695c0;
+        font-weight: bolder;
+        transform: scale(1.9);
+        transform: rotate(2turn);
+    }
+
+    20% {
+        background-color: #cf008a;
+        transform: rotate(4.3turn);
+        transform: rotate(2turn);
+    }
+
+    50% {
+        background-color: #ce3a00;
+        transform: scale(1.5);
+        font-weight: lighter;
+        transform: rotate(3turn);
+        width: 500px;
+    }
+
+    90% {
+        opacity: 1;
+        border-radius: 10px;
+        transform: scale(1.3);
+        font-weight: 700;
+        color: #e5ff00
+        background-color: #0200000;
     }
 }
