@@ -1,15 +1,46 @@
 *{
     font-family: montserrat;
+    background-color: black;
+    display: grid;
+    justify-items: center;
 }
 
 .load {
-    display: grid;
+    animation: giro 1s infinite;
     position: relative;
-    justify-items: center;
+    align-items: center;
     height: 20em;
     width: 20em;
-    color: #ffffff;
-    background-color: #1133c9;
+    color: #33ff00;
+    background-color: #000000;
     border-radius: 50%;
-    box-shadow: 1em 1em 0.5em #aa1133;
+    box-shadow: 0.4em 0.4em 0.5em #33ff00;
+}
+
+@keyframes giro {
+    0%{
+        box-shadow: 0.4em 0.4em 0.5em #33ff00;
+        color: #33ff00;
+    }
+
+    25%{
+        box-shadow: 0.4em 0.4em 0.5em #ff00aa;
+        color: #ff00aa;
+    }
+
+    50%{
+        box-shadow: 0.4em 0.4em 0.5em #bbff00;
+        color: #bbff00;
+    }
+
+    75%{
+        box-shadow: 0.4em 0.4em 0.5em #00ffea;
+        color: #00ffea;
+    }
+    
+    100%{
+        box-shadow: 0.4em 0.4em 0.5em #33ff00;
+        color: #33ff00;
+        transform: rotate(1turn);
+    }
 }
