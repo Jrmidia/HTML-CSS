@@ -1,18 +1,27 @@
 *{
-    font-family: montserrat;
-    background-color: black;
+    font-family: montserrat;    
+    background-color: #645c5c;
     display: grid;
     justify-items: center;
 }
 
+.img{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    opacity: 50%;
+}
+
 .load {
-    animation: giro 1s infinite;
-    position: relative;
+    animation: giro 1.5s infinite;
     align-items: center;
-    height: 20em;
-    width: 20em;
-    color: #33ff00;
-    background-color: #000000;
+    justify-items: center;
+    margin: 4em;
+    height: 30em;
+    width: 30em;
+    font-weight: 600;
     border-radius: 50%;
     box-shadow: 0.4em 0.4em 0.5em #33ff00;
 }
@@ -23,7 +32,7 @@
         color: #33ff00;
     }
 
-    25%{
+    20%{
         box-shadow: 0.4em 0.4em 0.5em #ff00aa;
         color: #ff00aa;
     }
@@ -33,7 +42,7 @@
         color: #bbff00;
     }
 
-    75%{
+    80%{
         box-shadow: 0.4em 0.4em 0.5em #00ffea;
         color: #00ffea;
     }
