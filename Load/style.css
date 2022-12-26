@@ -43,6 +43,6 @@
     100%{
         box-shadow: 0.4em 0.4em 0.5em #33ff00;
         color: #33ff00;
-        transform: rotate(1turn);
+        transform: rotate(3turn);
     }
 }
