@@ -1,33 +1,17 @@
-body {
-    margin: 0px;
-}
-
-div {
-    width: 100px;
-    height: 100px;
-    margin: 0px;
-    border: solid;
-    border-radius: 20px;
-    border-image-slice: 2;
-    border-width: 10px;
-    border-image-source: 
-        linear-gradient(
-            45deg,
-            #ff8800,
-            #ff0095,
-            #4e1177,
-            #00f5fd);
+*{
+    margin: auto;
 }
 
 main {
+    display: grid;
     animation: giro 2s infinite;
     width: 100px;
     height: 100px;
     margin-top: 10px;
     border: solid;
-    border-radius: 20px;
+    border-radius: 50%;
     border-image-slice: 2;
-    border-width: 10px;
+    border-width: 20px;
     border-image-source: 
         linear-gradient(
             135deg,
@@ -39,6 +23,22 @@ main {
 
 @keyframes giro {
     0% {
+        transform: rotate(1turn);
+        border-width: 50px;
+    }
+
+    25% {
+        transform: rotate(turn);
+        border-width: 10px;
+    }
+    
+    50% {
         
+        border-width: 10px;
+    }
+
+    100% {
+        transform: rotate(10turn);
+        border-width: 50px;
     }
 }
