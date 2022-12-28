@@ -1,5 +1,6 @@
 *{
     margin: auto;
+    background-color: #000000;
 }
 
 main {
@@ -7,7 +8,7 @@ main {
     animation: giro 2s infinite;
     width: 100px;
     height: 100px;
-    margin-top: 10px;
+    margin-top: 250px;
     border: solid;
     border-radius: 50%;
     border-image-slice: 2;
@@ -24,21 +25,22 @@ main {
 @keyframes giro {
     0% {
         transform: rotate(1turn);
-        border-width: 50px;
+        border-width: 10px;
     }
 
     25% {
         transform: rotate(turn);
-        border-width: 10px;
+        border-width: 50px;
+        border-radius: 50%;
     }
     
     50% {
         
-        border-width: 10px;
+        border-width: 50px;
     }
 
     100% {
-        transform: rotate(10turn);
-        border-width: 50px;
+        transform: rotate(5turn);
+        border-width: 10px;
     }
 }
