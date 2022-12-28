@@ -20,6 +20,7 @@ div {
 }
 
 main {
+    animation: giro 2s infinite;
     width: 100px;
     height: 100px;
     margin-top: 10px;
@@ -34,4 +35,10 @@ main {
             #ff0095,
             #4e1177,
             #00f5fd);
+}
+
+@keyframes giro {
+    0% {
+        
+    }
 }
