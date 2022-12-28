@@ -19,6 +19,10 @@
 
 }
 
+.load:hover {
+    background-image: url(imagem/img_bkg.jpg);
+}
+
 @keyframes giro {
     0%{
         box-shadow: 0.4em 0.4em 0.5em #33ff00;
